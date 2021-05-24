@@ -1,5 +1,5 @@
-import { Exam } from "./Exam";
-import { Question } from "./Question";
+import { Exam } from "./exam";
+import { Question } from "./question";
 
 console.log("start");
 let q1 = new Question("1+1",["2","1","3","4"],0);
