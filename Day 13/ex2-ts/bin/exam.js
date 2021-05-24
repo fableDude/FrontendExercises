@@ -26,9 +26,8 @@ var Exam = /** @class */ (function () {
             if (_this.questions[index].correctIndex == answer) {
                 grade++;
             }
-            grade = (100 / _this.questions.length) * grade;
         });
-        return grade;
+        return grade / this.questions.length * 100;
     };
     return Exam;
 }());

@@ -1,5 +1,5 @@
 console.log("start");
-/*
+
 import { Exam } from "./exam";
 import { Question } from "./question";
 
@@ -12,4 +12,4 @@ let exam1 = new Exam([q1,q2,q3,q4])
 
 console.log(`your grade is:${exam1.grade([0,2,1,3])}`);
 console.log(`your grade is:${exam1.grade([1,2,1,3])}`);
-console.log(`your grade is:${exam1.grade([2,1,1,0])}`);*/
+console.log(`your grade is:${exam1.grade([2,1,1,0])}`);

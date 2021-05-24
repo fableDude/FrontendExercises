@@ -27,9 +27,8 @@ export class Exam{
             if(this.questions[index].correctIndex == answer){
                 grade++;
             }
-            grade = (100/this.questions.length)*grade;
         });
-        return grade;
+        return grade/this.questions.length*100;
 
     }
 }
