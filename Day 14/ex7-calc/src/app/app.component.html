@@ -3,5 +3,7 @@
 <input #n2  (input)="setnum2(n2.value)" type="number">
 <div><button (click)="calc()">Go</button></div>
 <ul>
-    <li *ngFor="let res of results">{{res}}</li>
+    <li *ngIf="calculated">{{n1.value}}+{{n2.value}}={{add()}}</li>
+    <li *ngIf="calculated">{{n1.value}}-{{n2.value}}={{dif()}}</li>
+    <li *ngIf="calculated">{{n1.value}}*{{n2.value}}={{mul()}}</li>
 </ul>

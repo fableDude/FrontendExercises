@@ -20,13 +20,14 @@ export class AppComponent {
   setnum2(num:string){
     this.num2=Number(num);
   }
+  
   calc():void{
     this.calculated = true;
-    this.results = [
-        `${this.num1}+${this.num2}=${this.add()}`,
-        `${this.num1}-${this.num2}=${this.dif()}`,
-        `${this.num1}*${this.num2}=${this.mul()}`
-    ]
+    //this.results = [
+    //    `${this.num1}+${this.num2}=${this.add()}`,
+    //    `${this.num1}-${this.num2}=${this.dif()}`,
+    //    `${this.num1}*${this.num2}=${this.mul()}`
+    //]
   }
   add():number{
     return this.num1+this.num2;
