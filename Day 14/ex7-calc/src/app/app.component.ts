@@ -14,10 +14,12 @@ export class AppComponent {
     results: string[] = [];
   //methods
   setnum1(num:string){
+    this.calculated = false;
     this.num1=Number(num);
   }
 
   setnum2(num:string){
+    this.calculated = false;
     this.num2=Number(num);
   }
   
