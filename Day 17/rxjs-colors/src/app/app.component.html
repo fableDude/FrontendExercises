@@ -1,0 +1,13 @@
+<div class="root">
+    <div class="user-input">
+         <input #red (input)="setRed(red.value)" type="number">
+         <input #green (input)="setGreen(green.value)" type="number">
+        <input #blue (input)="setBlue(blue.value)" type="number">
+    </div>
+    <div class="color-presenter">
+        <app-color-presenter></app-color-presenter>
+        <app-color-presenter></app-color-presenter>
+    </div>
+    <button>Random color</button>
+    <h2>Success!!!</h2>
+</div>

@@ -1,0 +1,11 @@
+.root{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+.color-block{
+    width: 50%;
+    height: 50%;
+}
