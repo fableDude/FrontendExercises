@@ -1,0 +1,13 @@
+ h2{
+     text-align: center;
+     margin: 10px;
+ }
+ ul{
+     padding: 0px;
+     margin: 0px;
+ }
+ li{
+     list-style: non;
+     margin: 8px;
+     padding: 4px;
+ }
