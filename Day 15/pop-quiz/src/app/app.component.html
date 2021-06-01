@@ -3,7 +3,10 @@
     <h1>pop quiz</h1>
 </div>
 <div class="main-area">
-    <app-question-presenter [question]="currentQuestion"></app-question-presenter>
+    <app-question-presenter 
+    [question]="currentQuestion"
+    (answerChosen)="userSelectAnswer($event)"
+    ></app-question-presenter>
 </div>
 <div class="summery-area"></div>
 </div>

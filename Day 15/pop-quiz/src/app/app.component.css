@@ -12,5 +12,8 @@
 }
 
 h1{
+    margin: 0px;
+    padding: 4px;
     text-align: center;
+    background-color: rgba(61, 216, 208, 0.555) ;
 }

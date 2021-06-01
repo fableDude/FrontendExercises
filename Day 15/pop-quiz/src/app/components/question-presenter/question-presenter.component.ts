@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Question } from 'src/app/models/question';
 import { QUESTIONS } from 'src/app/models/questions';
+
 
 @Component({
   selector: 'app-question-presenter',
@@ -12,12 +13,18 @@ export class QuestionPresenterComponent implements OnInit {
 @Input () 
 question : Question = QUESTIONS[0];
 
+@Output()
+answerChosen = new EventEmitter<string>();
 
   constructor() { 
   }
       
 
   ngOnInit(): void {
+  }
+
+  onSelectAnswer(answer:string){
+      this.answerChosen.emit(answer);
   }
 
 }

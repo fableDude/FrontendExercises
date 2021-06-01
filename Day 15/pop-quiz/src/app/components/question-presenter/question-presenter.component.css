@@ -1,6 +1,7 @@
  h2{
      text-align: center;
      margin: 10px;
+     border-bottom:  1px solid red;
  }
  ul{
      padding: 0px;
@@ -10,4 +11,14 @@
      list-style: non;
      margin: 8px;
      padding: 4px;
+     border: 1px solid lightseagreen;
+     border-radius: 10px;
+     cursor: pointer;
+     background-color: rgb(32,178,171,0.1);
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: rgb(9, 68, 65);
+ }
+
+ li:hover{
+     background-color: rgb(32,178,171,0.3);
  }
