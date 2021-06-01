@@ -12,13 +12,13 @@ export class AppComponent {
    //data 
   currentQuestion: Question;
   currentQuestionIndex: number;
-  summery: Question[];
+  summary: Question[];
   isQuizOver: boolean;
 
   constructor() {
     this.currentQuestionIndex = 0;
     this.currentQuestion = QUESTIONS[this.currentQuestionIndex];
-    this.summery = [];
+    this.summary = [];
     this.isQuizOver = false;
   }
 
@@ -29,7 +29,7 @@ export class AppComponent {
         let answerIndex = this.currentQuestion.answers.indexOf(answer);
         this.currentQuestion.userAnswer = answerIndex;
 
-        this.summery.push(this.currentQuestion);
+        this.summary.push(this.currentQuestion);
         this.currentQuestionIndex ++;
         this.currentQuestion = QUESTIONS[this.currentQuestionIndex];
         this.isQuizOver = !(this.currentQuestion);
